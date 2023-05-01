@@ -1,0 +1,248 @@
+/*------------------------------------------ NAVBAR ----------------------------------------------*/
+
+#parallelogram {
+  width: 585px;
+  height: 88px;
+  transform: skew(20deg);
+  background-color: rgb(26, 26, 26);
+  position: absolute;
+  z-index: 93;
+  margin-left: 55.5%;
+  box-shadow: rgba(0, 0, 0, 0.4) -4px 0px, rgba(0, 0, 0, 0.3) -9px 0px, rgba(0, 0, 0, 0.2) -14px 0px, rgba(0, 0, 0, 0.1) -19px 0px, rgba(0, 0, 0, 0.05) -24px 0px;
+
+}
+
+
+#logo {
+  width: 10%;
+  max-width: 100%;
+  margin-left: 7%;
+  margin-top: 4.5%;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    top: -50%;
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+:root {
+  --navbar-bg-color: hsl(0, 0%, 94%);
+  --navbar-text-color: hsl(0, 0%, 0%);
+  --navbar-text-color-focus: rgb(91, 136, 157);
+  --navbar-link-color: hsl(0, 0%, 0%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  --navbar-height: 65px;
+  position: fixed;
+  height: var(--navbar-height);
+  background-color: var(--navbar-bg-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 95;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0.4em;
+  width: 100%;
+}
+
+#mayermekk {
+  font-size: 1.4em;
+}
+
+.home-link,
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.home-link:is(:focus, :hover) {
+  color: var(--navbar-text-color-focus);
+  text-decoration: none;
+}
+
+.navbar-link {
+  justify-content: center;
+  width: 100%;
+  padding: 0em 0.8em;
+  border-radius: 5px;
+}
+
+.navbar-link:is(:focus, :hover) {
+  color: var(--navbar-text-color-focus);
+  background-color: var(--navbar-bg-contrast);
+  text-decoration: none;
+}
+
+#navbar-logo {
+  margin-right: 3.5em;
+}
+
+#navbar-logo img {
+  position: absolute;
+  margin-right: 0.5em;
+  width: 3em;
+  margin-top: -1.5em;
+  max-width: 3em;
+}
+
+#navbar-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+  margin-right: 11%;
+}
+
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  background-color: white;
+}
+
+#navbar-toggle:is(:focus, :hover) .icon-bar {
+  background-color: #5b889d;
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+  position: absolute;
+  margin: 0;
+  width: 30px;
+
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
+  transform: rotate(45deg);
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
+  transform: rotate(-45deg);
+}
+
+#navbar-menu {
+  position: fixed;
+  top: var(--navbar-height);
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#navbar-toggle[aria-expanded="true"]+#navbar-menu {
+  background-color: rgba(37, 37, 37, 0.842);
+  opacity: 100;
+  visibility: visible;
+  z-index: 93;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  text-shadow: black 0.2em 0.2em 0.1em
+}
+
+#link1 {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+}
+
+#link3 {
+  z-index: 100;
+  color: white;
+}
+
+
+#navbar-toggle[aria-expanded="true"]+#navbar-menu .navbar-links {
+  padding: 1em;
+}
+
+@media screen and (min-width: 700px) {
+
+  #navbar-toggle,
+  #navbar-toggle[aria-expanded="true"] {
+    display: none;
+  }
+
+  #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] #navbar-menu {
+    visibility: visible;
+    opacity: 100;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  .navbar-links,
+  #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*------------------------------------------ NAVBAR ----------------------------------------------*/

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href='{{url_for("static", filename="chat.css")}}'>
+{% extends "mal.html" %}
+
+
+
+{% block innhold %}
+
+<div id="stjerner">
+    <img style="width: 17em; max-width: 100%;" src="/static/video/stars.png" alt="">
+</div>
+
+<div class="bilder">
+    <div class="grid-box2">
+
+        <h1>TILBAKEMELDING</h1>
+
+        <form id="hele-form" action="/chat" method="post">
+            <ul class="form">
+                <label class="label" for="navn">NAVN:</label>
+                <textarea type="text" name="navn"></textarea>
+            </ul>
+            <ul class="form">
+                <label class="label" for="melding">MELDING:</label>
+                <textarea type="text" name="melding"></textarea>
+            </ul>
+            <ul>
+                <div id="mellomrom2"></div>
+            </ul>
+            <ul class="form">
+                <button class="submit" type="submit"><img style="width: 1.8em; max-width: 100%;"
+                        src="/static/video/send.png" alt="Blått papirfly ikon"></button>
+            </ul>
+        </form>
+
+    </div>
+</div>
+
+
+
+<div id="utskriv">
+    {% for innlegg in chat %}
+    <ul>
+        <p>
+            Navn: {{innlegg["navn"]}}
+        </p>
+    </ul>
+    <ul>
+        <p>
+            Tilbakemelding: {{innlegg["melding"]}}
+        </p>
+    </ul>
+    <div id="mellomrom"></div>
+    {% endfor %}
+</div>
+
+{% endblock %}

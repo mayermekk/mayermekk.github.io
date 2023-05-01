@@ -1,0 +1,243 @@
+<link rel="stylesheet" href='{{url_for("static", filename="style.css")}}'>
+{% extends "mal.html" %}
+
+
+
+{% block innhold %}
+
+<!----------------------------------JOBBER-------------------------------------------------------------->
+
+<h1 id="service-h1">SERVICER</h1>
+<h3 id="mye-mer">- Eksempler på mulige servicer:</h3>
+
+{% for id, servicer in service.items() %}
+
+{% endfor %}
+
+<div class="cards">
+    <div class="card">
+        <div class="grid-item" class="card"><img style="width: 30%; max-width: 100%;"
+                src="/static/bilder/inner-tube.png"></div>
+
+        <h2 class="h2_jobber">Slange/dekk</h2>
+
+        <ul class="grid-item">
+
+            <a href="/servicer/slange">
+
+                {{service["slange"]["navn"]}} -
+                {{service["slange"]["kr"]}}
+                {{service["slange"]["pris"]}}
+            </a>
+        </ul>
+
+
+        <ul class="grid-item">
+            <a href="/servicer/dekk">
+
+                {{service["dekk"]["navn"]}} -
+                {{service["dekk"]["kr"]}}
+                {{service["dekk"]["pris"]}}
+        </ul>
+        </a>
+    </div>
+
+
+    <div class="card">
+        <div class="grid-item" class="card"><img style="width: 30%; max-width: 37%;" src="/static/bilder/brake.png"
+                alt=""></div>
+
+        <h2 class="h2_jobber">Bremser</h2>
+
+        <ul class="grid-item">
+            <a href="/servicer/bremseklosser">
+
+                {{service["bremseklosser"]["navn"]}} -
+                {{service["bremseklosser"]["kr"]}}
+                {{service["bremseklosser"]["pris"]}}
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/bremsevaier">
+
+                {{service["bremsevaier"]["navn"]}} -
+                {{service["bremsevaier"]["kr"]}}
+                {{service["bremsevaier"]["pris"]}}
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/justere_bremser">
+
+                {{service["justere_bremser"]["navn"]}} -
+                {{service["justere_bremser"]["kr"]}}
+                {{service["justere_bremser"]["pris"]}}
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/lufte_bremser">
+
+                {{service["lufte_bremser"]["navn"]}} -
+                {{service["lufte_bremser"]["kr"]}}
+                {{service["lufte_bremser"]["pris"]}}
+        </ul>
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="grid-item" class="card"><img style="width: 30%; max-width: 37%;" src="/static/bilder/bike.png"
+                alt=""></div>
+
+        <h2 class="h2_jobber">Drivverk</h2>
+
+        <ul class="grid-item">
+            <a href="/servicer/bytte_girvaier">
+
+                {{service["bytte_girvaier"]["navn"]}} -
+                {{service["bytte_girvaier"]["kr"]}}
+                {{service["bytte_girvaier"]["pris"]}}
+                <img src="/MayerMekk/static/video/info.png" alt="">
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/justere_gir">
+
+                {{service["justere_gir"]["navn"]}} -
+                {{service["justere_gir"]["kr"]}}
+                {{service["justere_gir"]["pris"]}}
+        </ul>
+        </a>
+
+    </div>
+</div>
+
+
+<div class="cards2">
+    <div class="card">
+        <div class="grid-item">
+            <img style="width: 30%; max-width: 37%;" src="/static/video/bubbles.png">
+        </div>
+
+        <h2 class="h2_jobber">Vedlikehold</h2>
+
+        <ul class="grid-item">
+            <a href="/servicer/grundig_vask">
+
+                {{service["grundig_vask"]["navn"]}} -
+                {{service["grundig_vask"]["kr"]}}
+                {{service["grundig_vask"]["pris"]}}
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/omsmoring">
+
+                {{service["omsmoring"]["navn"]}} -
+                {{service["omsmoring"]["kr"]}}
+                {{service["omsmoring"]["pris"]}}
+        </ul>
+        </a>
+    </div>
+
+
+    <div class="card">
+        <ul>
+            <div class="grid-item"><img style="width: 30%; max-width: 37%;" src="/static/video/spoke-wheel.png">
+        </ul>
+
+        <h2 class="h2_jobber">Hjul</h2>
+
+        <ul class="grid-item">
+            <a href="/servicer/rette">
+
+                {{service["rette"]["navn"]}} -
+                {{service["rette"]["kr"]}}
+                {{service["rette"]["pris"]}}
+        </ul>
+        </a>
+        <ul class="grid-item">
+            <a href="/servicer/teip">
+
+                {{service["teip"]["navn"]}} -
+                {{service["teip"]["kr"]}}
+                {{service["teip"]["pris"]}}
+        </ul>
+        </a>
+    </div>
+
+
+    <div class="card">
+        <ul>
+            <div class="grid-item"><img style="width: 30%; max-width: 37%;" src="/static/video/bicycle-fork.png">
+        </ul>
+
+        <h2 class="h2_jobber">Demper</h2>
+
+        <ul class="grid-item">
+
+            <a href="/servicer/demper">
+
+                {{service["demper"]["navn"]}} -
+                {{service["demper"]["kr"]}}
+                {{service["demper"]["pris"]}}
+        </ul>
+        </a>
+
+        <ul class="grid-item">
+            <a href="/servicer/kappe">
+
+                {{service["kappe"]["navn"]}} -
+                {{service["kappe"]["kr"]}}
+                {{service["kappe"]["pris"]}}
+        </ul>
+        </a>
+    </div>
+</div>
+
+<!----------------------------------JOBBER-------------------------------------------------------------->
+
+
+
+
+<!----------------------------------NB!-------------------------------------------------------------->
+
+<div class="NB-info">
+    <a id="NB-info-boks">
+        <img style="width: 2em; max-width: 100%; background-color: rgb(255, 234, 0);" src="/static/bilder/warning.png"
+            alt="Text boble ikon">
+        <div id="skille-linje"></div>
+        Priser for deler kommer i tillegg
+    </a>
+</div>
+
+<!----------------------------------NB!-------------------------------------------------------------->
+
+
+
+
+
+<!------------------------------------------ BESTILL SERVICE ---------------------------------------------->
+
+<h1 id="bestill-h1">BESTILL SERVICE</h1>
+
+<div class="contact-form">
+    <form action="https://formsubmit.co/mayermekk@gmail.com" method="POST">
+        <div>
+            <input type="hidden" name="_subject" value="Kunde Kontakt!">
+            <textarea class="kundens-navn" type="text" name="Kundens navn" placeholder="Ditt navn" required></textarea>
+            <textarea class="telefon" type="phonenumber" name="Kundens Telefon" placeholder="tlf: 123 45 678"
+                required></textarea>
+        </div>
+        <textarea id="subject" type="text" name="subject" placeholder="Hva enn du trenger!"
+            style="height:200px; width:411px; margin-top: 2%;"></textarea>
+        <div></div>
+        <button class="send" type="submit"><img style="width: 2em; max-width: 100%;" src="/static/video/send.png"
+                alt="Blått papirfly ikon"></button>
+    </form>
+</div>
+
+<!------------------------------------------ BESTILL SERVICE ---------------------------------------------->
+{% endblock %}

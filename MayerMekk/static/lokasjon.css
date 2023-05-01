@@ -1,0 +1,29 @@
+body {
+  background: black;
+}
+
+/*------------------------------------------KART----------------------------------------------*/
+.gmap_canvas {
+  margin-top: 4em;
+  margin-left: -12%;
+  position: absolute;
+  z-index: 1;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  z-index: 1;
+  background: none;
+  height: 822px;
+  width: 113%;
+}
+
+.mapouter {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  height: 822px;
+  width: 100%;
+}
+
+/*------------------------------------------KART----------------------------------------------*/

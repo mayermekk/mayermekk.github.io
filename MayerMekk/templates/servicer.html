@@ -1,0 +1,32 @@
+<link rel="stylesheet" href='{{url_for("static", filename="servicer.css")}}'>
+<link rel="stylesheet" href='{{url_for("static", filename="style.css")}}'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background: rgb(35, 35, 35);
+    }
+</style>
+
+
+{% block innhold %}
+
+<a href="/service">
+    <img id="back" src="/static/video/return.png" style="width: 3em; max-width: 100%;" alt="">
+</a>
+
+<div class="texten">
+    <ul class="grid-item">
+        <h1>"{{service["navn"]}}" kort forklart</h1>
+    </ul>
+
+    <ul>
+        <div class="linje"></div>
+    </ul>
+
+    <ul>
+        <p>{{service["forklart"]}}</p>
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+h1 {
+    margin-top: -3%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 93;
+    font-size: 155%;
+}
+
+
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#utskriv {
+    color: white;
+    margin-left: 43%;
+    margin-top: 10%;
+}
+
+#mellomrom {
+    height: 10%;
+}
+
+#mellomrom2 {
+    height: 5%;
+}
+
+.label {
+    color: white;
+    margin-right: 1%;
+    font-weight: 700;
+}
+
+textarea {
+    background: #1f1f1f;
+    border: none;
+    border-bottom: solid #51e6e6 2px;
+    color: white;
+    height: 20px;
+}
+
+#hele-form {
+    margin-top: 3%;
+    margin-left: 0%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.submit {
+    height: 35px;
+    width: 260px;
+    margin-top: 4%;
+    background: #000000;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 22px 70px 4px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: -2%;
+    position: relative;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.submit:hover {
+    background: #b0b0b0;
+}
+
+.grid-box2 {
+    width: 200%;
+    height: 106%;
+    max-height: 106%;
+    max-width: 200%;
+    margin-top: -2%;
+    background: #1f1f1f;
+}
+
+#stjerner {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
