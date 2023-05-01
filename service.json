@@ -1,0 +1,87 @@
+{
+    "dekk": {
+        "navn": "Bytte dekk (pr dekk)",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her bytter kjapt og enkelt dekk uavhengig av type dekk eller sykkel."
+    },
+    "slange": {
+        "navn": "Bytte slange (pr slange)",
+        "kr": "kr",
+        "pris": 150,
+        "forklart": "Her bytter vi slange og ser etter eventuelle ting inni dekket eller på felgen som kan være skadlig for slangen."
+    },
+    "bremseklosser": {
+        "navn": "Bytte bremseklosser",
+        "kr": "kr",
+        "pris": 50,
+        "forklart": "Her bytter vi bremseklosser og eventuelt rense kaliperen om det trengs.",
+        "img": "https://www.flaticon.com/free-icon/info_9446643?term=info&page=1&position=10&origin=search&related_id=9446643" 
+    },
+    "bremsevaier": {
+        "navn": "Bytte bremsevaier",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her bytter vi bremsekablen og justerer i bremsene på nytt og sørger for at kablen glir godt gjennom kabelhuset."
+    },
+    "justere_bremser": {
+        "navn": "Justere bremser",
+        "kr": "kr",
+        "pris": 50,
+        "forklart": "Her justerer vi inn bremsene til dit ønske og slik det burde være uavhengig av type brems."
+    },
+    "lufte_bremser": {
+        "navn": "Lufte bremser",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her lufter vi ut bremsesystemet dersom du har hydrauliske bremser, slik at du oppnår stoppe kraften som trengs."
+    },
+    "justere_gir": {
+        "navn": "Justere gir",
+        "kr": "kr",
+        "pris": 100,
+        "forklart": "Her justerer vi inn giret slik at giringen er god og gjevn og ser over om det er deler som burde byttes eller fikses."
+    },
+    "bytte_girvaier": {
+        "navn": "Bytte girvaier",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her bytter vi girkabelen og sjekker at kabelen glir godt og setter på endekopper på kabelen."
+    },
+    "omsmoring": {
+        "navn": "Full omsøring",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her tar vi ut alle langre og eventuelle linker i sykkelen for å rense dem og se på tilstanden på langrene i tilfelle de burde byttes, for deretter smøreopp på nytt."
+    },
+    "grundig_vask": {
+        "navn": "Grundig vask",
+        "kr": "kr",
+        "pris": 200,
+        "forklart": "Her tar vi å vasker hele sykkelen grundig med såpe/avfetning og div børster. Noen ganger er alt sykkelen trenger en grundig vask. Er særdeles viktig å vaske sykkelen for at den både skal vare og fungere!"
+    },
+    "rette": {
+        "navn": "Rette opp hjul (pr hjul)",
+        "kr": "kr",
+        "pris": 250,
+        "forklart": "Her kan vi ta å rette opp hjulet ditt dersom det er skjevt eller ujevnt. Vi kan også ta imot dersom du har bøyd eller knekt en eike."
+    },
+    "teip": {
+        "navn": "Bytte felg teip (pr felg)",
+        "kr": "kr",
+        "pris": 150,
+        "forklart": "Her bytter vi og tørker over indre delen av felgen for å legge inn ny felgteip som er essensielt for å hindre pungteringer."
+    },
+    "demper": {
+        "navn": "Sette opp dempere",
+        "kr": "kr",
+        "pris": 100,
+        "forklart": "Her hjelper vi deg med å sette opp demperene til ditt ønske, stil og vekt."
+    },
+    "kappe": {
+        "navn": "Tilpasse styrerør",
+        "kr": "kr",
+        "pris": 50,
+        "forklart": "Her kan vi kappe til styrerøret på gaffelen din dersom den er før høy eller om du har en rykende fersk gaffel. Her gjelder det å måle riktig høyde, kappe rett og runde av kantene på kappet."
+    }    
+}
